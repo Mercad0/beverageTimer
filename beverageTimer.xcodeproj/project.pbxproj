@@ -13,6 +13,7 @@
 		81FC493B29CA2F350024B2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FC493929CA2F350024B2DA /* Main.storyboard */; };
 		81FC493D29CA2F370024B2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FC493C29CA2F370024B2DA /* Assets.xcassets */; };
 		81FC494029CA2F370024B2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FC493E29CA2F370024B2DA /* LaunchScreen.storyboard */; };
+		81FC494829CA39C70024B2DA /* chime_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81FC494729CA39C70024B2DA /* chime_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		81FC493C29CA2F370024B2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81FC493F29CA2F370024B2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81FC494129CA2F370024B2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81FC494729CA39C70024B2DA /* chime_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chime_sound.mp3; path = ../../../../../../Downloads/chime_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				81FC493C29CA2F370024B2DA /* Assets.xcassets */,
 				81FC493E29CA2F370024B2DA /* LaunchScreen.storyboard */,
 				81FC494129CA2F370024B2DA /* Info.plist */,
+				81FC494729CA39C70024B2DA /* chime_sound.mp3 */,
 			);
 			path = beverageTimer;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				81FC494029CA2F370024B2DA /* LaunchScreen.storyboard in Resources */,
 				81FC493D29CA2F370024B2DA /* Assets.xcassets in Resources */,
+				81FC494829CA39C70024B2DA /* chime_sound.mp3 in Resources */,
 				81FC493B29CA2F350024B2DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
