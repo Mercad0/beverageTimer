@@ -29,7 +29,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="sSK-Ib-obV" secondAttribute="trailing" id="Ew2-0h-9DZ"/>
                                             <constraint firstAttribute="bottom" secondItem="sSK-Ib-obV" secondAttribute="bottom" id="NyR-uk-09U"/>
@@ -43,20 +42,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-Zn-OFb" userLabel="Green Tea View">
                                                 <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenTea" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-qe-q4a">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ua-je-6Us" userLabel="Green Tea">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ua-je-6Us">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="11"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="GreenTea"/>
+                                                        <state key="normal" title="Green Tea"/>
                                                         <connections>
                                                             <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAR-pn-uJ3"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenTea" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-qe-q4a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="2ua-je-6Us" secondAttribute="trailing" id="96l-Oa-1aL"/>
                                                     <constraint firstItem="2ua-je-6Us" firstAttribute="leading" secondItem="nYF-Zn-OFb" secondAttribute="leading" id="Dhb-46-40R"/>
@@ -71,9 +69,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDD-yz-4Y5" userLabel="Milk View">
                                                 <rect key="frame" x="122.66666666666666" y="0.0" width="107.66666666666666" height="226.33333333333334"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-Bi-ftb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
-                                                    </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gck-bG-cpG">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
@@ -83,8 +78,10 @@
                                                             <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mU-4S-yX1"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-Bi-ftb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Rem-Bi-ftb" firstAttribute="top" secondItem="sDD-yz-4Y5" secondAttribute="top" id="1Ns-Ig-qzx"/>
                                                     <constraint firstItem="Gck-bG-cpG" firstAttribute="leading" secondItem="sDD-yz-4Y5" secondAttribute="leading" id="5kP-v0-llw"/>
@@ -99,9 +96,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGD-3C-Yiy" userLabel="Coffee View">
                                                 <rect key="frame" x="245.33333333333329" y="0.0" width="107.66666666666666" height="226.33333333333334"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-3u-4Wr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
-                                                    </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80j-a5-1le">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
@@ -111,8 +105,10 @@
                                                             <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jhq-vd-gmG"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-3u-4Wr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="vaG-3u-4Wr" firstAttribute="top" secondItem="KGD-3C-Yiy" secondAttribute="top" id="8QZ-OM-gKp"/>
                                                     <constraint firstAttribute="trailing" secondItem="vaG-3u-4Wr" secondAttribute="trailing" id="9Ht-B0-BsQ"/>
@@ -126,9 +122,23 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-QI-BPJ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-QI-BPJ" userLabel="Progress View">
                                         <rect key="frame" x="0.0" y="532.66666666666663" width="353" height="226.33333333333337"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Hid-Ev-tfS">
+                                                <rect key="frame" x="0.0" y="108.33333333333337" width="353" height="11"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="cwn-y7-BaZ"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemGreenColor"/>
+                                                <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Hid-Ev-tfS" firstAttribute="leading" secondItem="kEj-QI-BPJ" secondAttribute="leading" id="FFe-Oi-0vC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hid-Ev-tfS" secondAttribute="trailing" id="iuY-Rt-vVV"/>
+                                            <constraint firstItem="Hid-Ev-tfS" firstAttribute="centerY" secondItem="kEj-QI-BPJ" secondAttribute="centerY" id="kxj-zF-Gy0"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -142,6 +152,10 @@
                             <constraint firstItem="P9n-Ro-z1w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eMD-9g-HWi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="Hid-Ev-tfS" id="TIg-7a-2dY"/>
+                        <outlet property="titleLabel" destination="sSK-Ib-obV" id="1BU-Wj-Weo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,8 +166,8 @@
         <image name="coffee" width="340" height="340"/>
         <image name="greenTea" width="340" height="340"/>
         <image name="milk" width="340" height="340"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
