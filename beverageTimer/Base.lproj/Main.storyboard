@@ -21,13 +21,112 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBx-pS-SnA">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="226.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you in the Mood for?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSK-Ib-obV">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="226.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sSK-Ib-obV" secondAttribute="trailing" id="Ew2-0h-9DZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="sSK-Ib-obV" secondAttribute="bottom" id="NyR-uk-09U"/>
+                                            <constraint firstItem="sSK-Ib-obV" firstAttribute="leading" secondItem="oBx-pS-SnA" secondAttribute="leading" id="u70-Ok-MPN"/>
+                                            <constraint firstItem="sSK-Ib-obV" firstAttribute="top" secondItem="oBx-pS-SnA" secondAttribute="top" id="xwO-7V-mye"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32y-Hb-DFO">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nwf-vw-jVp" userLabel="Beverages Stack View">
                                         <rect key="frame" x="0.0" y="266.33333333333331" width="353" height="226.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-SB-TfD">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-Zn-OFb" userLabel="Green Tea View">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenTea" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-qe-q4a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ua-je-6Us">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="GreenTea"/>
+                                                        <connections>
+                                                            <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAR-pn-uJ3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="2ua-je-6Us" secondAttribute="trailing" id="96l-Oa-1aL"/>
+                                                    <constraint firstItem="2ua-je-6Us" firstAttribute="leading" secondItem="nYF-Zn-OFb" secondAttribute="leading" id="Dhb-46-40R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dYq-qe-q4a" secondAttribute="bottom" id="Gpe-if-wV9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dYq-qe-q4a" secondAttribute="trailing" id="MKU-15-VQV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2ua-je-6Us" secondAttribute="bottom" id="Q2U-Dc-FZD"/>
+                                                    <constraint firstItem="dYq-qe-q4a" firstAttribute="leading" secondItem="nYF-Zn-OFb" secondAttribute="leading" id="VFo-a5-qIv"/>
+                                                    <constraint firstItem="2ua-je-6Us" firstAttribute="top" secondItem="nYF-Zn-OFb" secondAttribute="top" id="afz-gu-pkC"/>
+                                                    <constraint firstItem="dYq-qe-q4a" firstAttribute="top" secondItem="nYF-Zn-OFb" secondAttribute="top" id="uZb-3D-gI2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDD-yz-4Y5" userLabel="Milk View">
+                                                <rect key="frame" x="122.66666666666666" y="0.0" width="107.66666666666666" height="226.33333333333334"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-Bi-ftb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gck-bG-cpG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Milk"/>
+                                                        <connections>
+                                                            <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mU-4S-yX1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Rem-Bi-ftb" firstAttribute="top" secondItem="sDD-yz-4Y5" secondAttribute="top" id="1Ns-Ig-qzx"/>
+                                                    <constraint firstItem="Gck-bG-cpG" firstAttribute="leading" secondItem="sDD-yz-4Y5" secondAttribute="leading" id="5kP-v0-llw"/>
+                                                    <constraint firstItem="Gck-bG-cpG" firstAttribute="top" secondItem="sDD-yz-4Y5" secondAttribute="top" id="bN7-9n-tQh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Gck-bG-cpG" secondAttribute="bottom" id="d2R-oQ-duv"/>
+                                                    <constraint firstItem="Rem-Bi-ftb" firstAttribute="leading" secondItem="sDD-yz-4Y5" secondAttribute="leading" id="dwS-qD-Z7S"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Gck-bG-cpG" secondAttribute="trailing" id="hgj-U9-dMs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Rem-Bi-ftb" secondAttribute="bottom" id="p0k-ZP-5sb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Rem-Bi-ftb" secondAttribute="trailing" id="t22-C6-Jd4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGD-3C-Yiy" userLabel="Coffee View">
+                                                <rect key="frame" x="245.33333333333329" y="0.0" width="107.66666666666666" height="226.33333333333334"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-3u-4Wr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80j-a5-1le">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="226.33333333333334"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Coffee"/>
+                                                        <connections>
+                                                            <action selector="beverageSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jhq-vd-gmG"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="vaG-3u-4Wr" firstAttribute="top" secondItem="KGD-3C-Yiy" secondAttribute="top" id="8QZ-OM-gKp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vaG-3u-4Wr" secondAttribute="trailing" id="9Ht-B0-BsQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="80j-a5-1le" secondAttribute="bottom" id="9J7-fc-Pas"/>
+                                                    <constraint firstAttribute="trailing" secondItem="80j-a5-1le" secondAttribute="trailing" id="BRL-04-Yh4"/>
+                                                    <constraint firstItem="80j-a5-1le" firstAttribute="leading" secondItem="KGD-3C-Yiy" secondAttribute="leading" id="Doh-30-NkM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vaG-3u-4Wr" secondAttribute="bottom" id="SRn-gW-5Eb"/>
+                                                    <constraint firstItem="80j-a5-1le" firstAttribute="top" secondItem="KGD-3C-Yiy" secondAttribute="top" id="X7C-l5-Ek3"/>
+                                                    <constraint firstItem="vaG-3u-4Wr" firstAttribute="leading" secondItem="KGD-3C-Yiy" secondAttribute="leading" id="pyq-hk-CHJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-QI-BPJ">
                                         <rect key="frame" x="0.0" y="532.66666666666663" width="353" height="226.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
@@ -50,6 +149,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="coffee" width="340" height="340"/>
+        <image name="greenTea" width="340" height="340"/>
+        <image name="milk" width="340" height="340"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

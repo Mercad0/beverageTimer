@@ -63,9 +63,9 @@
 				81FC493729CA2F350024B2DA /* ViewController.swift */,
 				81FC493929CA2F350024B2DA /* Main.storyboard */,
 				81FC493C29CA2F370024B2DA /* Assets.xcassets */,
+				81FC494729CA39C70024B2DA /* chime_sound.mp3 */,
 				81FC493E29CA2F370024B2DA /* LaunchScreen.storyboard */,
 				81FC494129CA2F370024B2DA /* Info.plist */,
-				81FC494729CA39C70024B2DA /* chime_sound.mp3 */,
 			);
 			path = beverageTimer;
 			sourceTree = "<group>";
