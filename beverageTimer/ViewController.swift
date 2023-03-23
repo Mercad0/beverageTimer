@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         do {
-            let url = Bundle.main.url(forResource: "chime_sound", withExtension: "mp3")!
+            let url = Bundle.main.url(forResource: "chimeSound", withExtension: "mp3")!
             sound = try AVAudioPlayer(contentsOf: url)
             sound?.prepareToPlay()
         } catch {
@@ -48,7 +48,8 @@ class ViewController: UIViewController {
     
     @objc func updateTimer() {
         if secondsPassed < totalTime {
-            
+            let remainingTime = totalTime - secondsPassed
+            titleLabel.text = "\(remainingTime) seconds left, please wait."
             secondsPassed += 1
             progressBar.progress = Float(secondsPassed) / Float(totalTime)
             
